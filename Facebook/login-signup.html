@@ -11,24 +11,27 @@
 </head>
 
 <body>
-    <main class="flex w-[100vw] h-[72vh] bg-[#f0f2f5] justify-center items-center">
-        <section class="flex w-7/12 h-max justify-between">
-            <div class="flex pt-9 justify-end text-right w-6/12">
-                <div class="flex flex-col items-start">
-                    <img src="Images/facebook-logo.svg" alt="facebook-logo" class="h-28">
-                    <h2 class="ml-9 text-3xl text-left">Connect with friends and the world around you on
+    <main class="flex w-[100vw] h-[50vh] lg:h-[72vh] lg:bg-[#f0f2f5] bg-white justify-center lg:items-center">
+        <section class="flex flex-col lg:flex-row lg:w-7/12 md:w-6/12 w-full h-max lg:justify-between justify-start">
+            <div
+                class="flex pt-2 lg:pt-9 justify-center after:lg:justify-end lg:text-right text-center lg:w-6/12 w-full">
+                <div class="flex lg:flex-col lg:items-start items-center justify-center lg:justify-start">
+                    <img src="Images/facebook-logo.svg" alt="facebook-logo" class="lg:h-28 h-10">
+                    <h2 class="ml-9 text-3xl text-left hidden lg:block">Connect with friends and the world around you on
                         Facebook.
                     </h2>
                 </div>
             </div>
-            <div class="w-[37%]">
-                <div class="flex flex-col justify-center items-center bg-white w-full rounded-lg shadow-md">
-                    <form action="" class="w-full text-center py-3">
+            <div class="lg:w-[37%] w-full">
+                <div class="flex flex-col justify-center items-center bg-white w-full rounded-lg lg:shadow-md">
+                    <form action="" class="w-full text-center lg:py-3">
 
-                        <input type="text" class="m-2 border border-gray-200 px-5 py-2 rounded-md w-11/12 "
+                        <input type="text"
+                            class="m-2 border border-gray-200 bg-[#f5f6f7] lg:bg-transparent px-5 py-2 rounded-md w-11/12 "
                             placeholder="Email or phone number">
 
-                        <input type="password" class="m-2 border border-gray-200 px-5 py-2 rounded-md w-11/12 "
+                        <input type="password"
+                            class="m-2 border border-gray-200 bg-[#f5f6f7] lg:bg-transparent px-5 py-2 rounded-md w-11/12 "
                             placeholder="Password">
 
                         <button type="submit"
@@ -43,7 +46,8 @@
                         new
                         account</button>
                 </div>
-                <p class="text-center w-full text-sm my-5"><a href="#" class="font-bold hover:underline">Create a
+                <p class="text-center w-full text-sm my-5 hidden lg:block"><a href="#"
+                        class="font-bold hover:underline">Create a
                         Page</a> for a
                     celebrity,
                     brand or
@@ -51,7 +55,7 @@
             </div>
         </section>
     </main>
-    <footer class="h-[20vh] w-full flex flex-col items-center pt-8">
+    <footer class="h-[20vh] w-full lg:flex flex-col items-center pt-8 hidden">
         <div class="w-6/12">
             <ul class="flex gap-3 text-xs text-gray-400 items-center">
                 <li class="hover:underline hover:cursor-pointer" lang="en">English (US) </li>
@@ -104,6 +108,27 @@
             <p class="my-2 text-xs font-medium text-gray-700">Meta &copy; 2022</p>
         </div>
     </footer>
+
+    <!-- For Mobiles and Tablets -->
+    <center>
+        <footer class="flex justify-around lg:hidden md:w-6/12 w-full text-xs">
+
+            <ul>
+                <li class="hover:underline hover:cursor-pointer" lang="en">English (US) </li>
+                <li class="hover:underline hover:cursor-pointer" lang="hi">हिन्दी </li>
+                <li class="hover:underline hover:cursor-pointer" lang="po">Português (Brasil) </li>
+                <li class="hover:underline hover:cursor-pointer" lang="nl">Deutsch </li>
+            </ul>
+            <ul>
+                <li class="hover:underline hover:cursor-pointer" lang="ne">नेपाली </li>
+                <li class="hover:underline hover:cursor-pointer" lang="es">Español </li>
+                <li class="hover:underline hover:cursor-pointer" lang="fr">Français (France) </li>
+                <li><button class="shadow-md px-3 bg-[#f5f6f7] py-[2px] text-black border border-gray-200">+</button>
+                </li>
+            </ul>
+
+        </footer>
+    </center>
 </body>
 
 </html>
